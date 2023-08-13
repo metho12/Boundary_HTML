@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <title>About Alzheimer’s disease </title>
+</head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="main.css" rel="stylesheet" />
+
+<style>
+
+  li{
+  text-align: left;  
+
+  }
+
+
+
+  .newsBox
+{
+    border: 5px solid #005566;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: -7px 9px #5555;
+}
+
+</style>
+
+
+
+<body>
+
+  <!-- unorder list -->
+  <div class="jumbotron text-center">
+    <h1> Alzheimer’s disease</h1> 
+
+  </div>
+
+  <div  class = "newsBox mx-5">
+  <ul>
+    
+  
+
+
+
+  <li> Alzheimer’s disease, or AD, is a widely increasing disorder of the brain that is affecting many people worldwide.  </li>
+    <li> It is regarded as the main cause of memory loss and dementia. 
+      Early diagnosis of AD is an important factor that helps make plans for AD patients and prevent the development of symptoms of this disease. 
+    </li>    
+    <div id="more" style="display: none;">
+
+      <li>There are various non-invasive techniques that can be used for an early diagnosis of the disease, such as an electroencephalogram (EEG), func- tional magnetic resonance imaging (fMRI), diffusion tensor imaging (DTI), and positron emission tomography (PET) neuroimaging</li>
+        
+    
+          
+    </div>
+  </ul>
+
+    
+    <div onclick="showMore()" class="btn btn-info" id="bt1">More</div>
+
+
+  
+</div>
+  
+
+
+<script>
+  
+  
+ 
+    function showMore() {
+      var moreDiv = document.getElementById('more');
+      var btn = document.getElementById('bt1');
+      if (moreDiv.style.display == "none") {
+        moreDiv.style.display = "block";
+        btn.innerText = 'less';
+      } else {
+        moreDiv.style.display = "none";
+        btn.innerText = 'more';
+
+      }
+
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
